@@ -1,10 +1,11 @@
 """¡Por supuesto! Aquí tienes otros 20 ejercicios
 para practicar el uso del rango `range(start, stop, step)`
 en Python:"""
-"""
+
 
 #----------------------------------------------------------------------------------
 
+"""
 
 # 1. Imprimir los números del 1 al 10.
 
@@ -112,6 +113,7 @@ def impar_num_1_10(num_1,num_2,incre):
 impar_num_1_10(1,10,2)
 
 # 14. Imprimir los números múltiplos de 3 del 30 al 0 en orden descendente.
+
 def multi_3_30_0(num_1,num_2,incre):
     for i in range(num_1, num_2+1, incre):
         print(i)
@@ -119,6 +121,7 @@ def multi_3_30_0(num_1,num_2,incre):
 multi_3_30_0(3,30,3)
 
 # 15. Imprimir los números del 1 al 10, saltando de 3 en 3.
+
 def impri_1_10_3(num_1, num_2, incre):
     for i in range(num_1, num_2+1, incre):
         print(i)
@@ -150,6 +153,7 @@ def impri_100_0_de_7(num_1,num_2,incre):
 impri_100_0_de_7(100,0,-7)
 
 # 19. Imprimir los números impares del 15 al 35.
+
 def impri_15_35(num_1,num_2,incre):
     for i in range(num_1,num_2+1,incre):
         print(i)
@@ -157,6 +161,7 @@ def impri_15_35(num_1,num_2,incre):
 impri_15_35(15,35,2)
 
 # 20. Imprimir los números pares del 50 al 20 en orden descendente.
+
 def impri_50_20_des_par(num_1,num_2,incre):
     for i in range(num_1, num_2-1, incre):
         print(i)
@@ -171,3 +176,74 @@ def impri_15_45_om2__om4(num_1,num_2,incre):
                 print(i)
 
 impri_15_45_om2__om4(5,45,1)
+
+# 22. Imprimir los números del 1 al 50, omitiendo los múltiplos de 5.
+
+def impr_1_50_om5(num_1,num_2,incre):
+    for i in range(num_1, num_2+2, incre):
+        if i % 5 != 0:
+            print(i)
+
+impr_1_50_om5(1,50,1)
+
+# 23. Imprimir los números del 10 al 30, omitiendo los números que contienen el dígito 2.
+
+def imp_10_30_om2dig(num_1, num_2,incre):
+    for i in range(num_1,num_2+1,incre):
+        if '2' not in str(i):
+            print(i)
+
+imp_10_30_om2dig(10,30,1)
+
+#24. Imprimir los números del 50 al 100, omitiendo los múltiplos de 9.
+
+def impr_50_100_mulom9(num_1, num_2, incre):
+    for i in range(num_1, num_2+1, incre):
+        if i % 9 != 0:
+            print(i)
+impr_50_100_mulom9(50,100,1)
+
+#25. Imprimir los números del 0 al 20, omitiendo los múltiplos de 3 y los números que contienen el dígito 1.
+
+def impri_0_20_mul3om_dig1om(num_1, num_2, incre):
+    for i in range(num_1, num_2+1, incre):
+        if i % 3 != 0 and '1' not in str(i):
+            print(i)
+
+impri_0_20_mul3om_dig1om(0,20,1)
+
+# 26. Imprimir los números del 100 al 200, omitiendo los números que son múltiplos de 4 y terminan en 5.
+
+def impri(num_1, num_2, incre):
+    for i in range(num_1, num_2+1, incre):
+        if i % 4 != 0 and str(i)[-1] != 5:
+            print(i)
+
+impri(100,200,1)
+
+# 27. Imprimir los números del 1 al 100, omitiendo los múltiplos de 6 y los números que contienen el dígito 9.
+
+def impr_1_100_om6mul_om9digi(num_1,num_2,incre):
+    for i in range(num_1, num_2 + 1, incre):
+        if i % 6 != 0 and '9' not in str(i):
+            print(i)
+impr_1_100_om6mul_om9digi(1,100,1)
+
+# 28. Imprimir los números del 30 al 60, omitiendo los múltiplos de 8 y los números que 
+
+terminan en 0.
+def impri_30_60_om8mul_om0and(num_1,num_2,incre):
+    for i in range(num_1, num_2 + 1, incre):
+        if i % 8 != 0 and '0' != str(i)[-1]:
+            print(i)
+
+impri_30_60_om8mul_om0and(30,60,1)
+
+
+# 29. Imprimir los números del 0 al 100, omitiendo los números que contienen los dígitos 3, 7 , 13, 17, 34 o 59.
+
+def impri(num_1, num_2, incre, digitos):
+    for i in range(num_1, num_2 + 1, incre):
+        if all( str(d) not in str(i) for d in digitos):
+            print(i)
+impri(0,100,1, digitos=[3, 7 , 13, 17, 34, 59])
