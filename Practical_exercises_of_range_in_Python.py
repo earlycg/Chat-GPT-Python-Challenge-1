@@ -1,6 +1,4 @@
-"""¡Por supuesto! Aquí tienes otros 20 ejercicios
-para practicar el uso del rango `range(start, stop, step)`
-en Python:"""
+"""para practicar el uso del rango `range(start, stop, step)` en Python:"""
 
 
 #----------------------------------------------------------------------------------
