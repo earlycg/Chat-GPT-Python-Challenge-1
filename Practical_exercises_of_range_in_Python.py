@@ -5,7 +5,6 @@ en Python:"""
 
 #----------------------------------------------------------------------------------
 
-"""
 
 # 1. Imprimir los números del 1 al 10.
 
@@ -229,9 +228,8 @@ def impr_1_100_om6mul_om9digi(num_1,num_2,incre):
             print(i)
 impr_1_100_om6mul_om9digi(1,100,1)
 
-# 28. Imprimir los números del 30 al 60, omitiendo los múltiplos de 8 y los números que 
+# 28. Imprimir los números del 30 al 60, omitiendo los múltiplos de 8 y los números que terminan en 0.
 
-terminan en 0.
 def impri_30_60_om8mul_om0and(num_1,num_2,incre):
     for i in range(num_1, num_2 + 1, incre):
         if i % 8 != 0 and '0' != str(i)[-1]:
@@ -239,11 +237,32 @@ def impri_30_60_om8mul_om0and(num_1,num_2,incre):
 
 impri_30_60_om8mul_om0and(30,60,1)
 
-
 # 29. Imprimir los números del 0 al 100, omitiendo los números que contienen los dígitos 3, 7 , 13, 17, 34 o 59.
 
 def impri(num_1, num_2, incre, digitos):
     for i in range(num_1, num_2 + 1, incre):
-        if all( str(d) not in str(i) for d in digitos):
+        if all(str(d) not in str(i) for d in digitos):
             print(i)
-impri(0,100,1, digitos=[3, 7 , 13, 17, 34, 59])
+
+
+def impri(num_1, num_2, incre, digitos):
+    lista = [i for i in range(num_1, num_2 + 1, incre) if all(str(d) not in str(i) for d in digitos)]
+    print(lista)
+
+
+def impri(num_1, num_2, incre, num):
+    lista = [i for i in range(num_1, num_2 + 1, incre) if not any(digito in str(i) for digito in map(str, num))]
+    print(lista)
+    
+impri(0,100,1, num=[3, 7 , 13, 17, 34, 59])
+
+
+
+# 30. Imprimir los números del 25 al 500, omitiendo los múltiplos de 11 y los números que contienen el dígito 4,5,8 y 9.
+
+def impri(num_1, num_2, incre, num):
+    lista = [i for i in range(num_1, num_2 + 1, incre) if i % 11 != 0 and not any(digito in str(i) for digito in map(str, num))]
+    print(lista)
+
+num = [4, 5, 8, 9]
+impri(25, 500, 1, num)
