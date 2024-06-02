@@ -70,23 +70,99 @@ y = 0
 while y < len(cadena):
     print(cadena[y])
     y += 1
-#5. **Imprimir números pares del 2 al 20:** Usa un bucle `while` para imprimir los números pares del 2 al 20.
 
+#5. **Imprimir números pares del 2 al 20:** Usa un bucle `while` para imprimir los números pares del 2 al 20.
+siclo = 1
+while siclo <= 20:
+    if siclo % 2 == 0:
+        print(siclo)
+    siclo += 1
 ### Ejercicios Intermedios
 
 #6. **Sumar elementos de una lista:** Dada una lista de números `[1, 2, 3, 4, 5]`, suma todos sus elementos y muestra el resultado.
 
+lista = [1, 2, 3, 4, 5]
+i = 0
+
+while i < len(lista) - 1:
+    if i == 0:
+        total = lista[i] + lista[i+1]
+        print(total)
+    else:
+        total += lista[i+1]
+        print(total)
+    i += 1
+
+lista = [1, 2, 3, 4, 5]
+i = 0
+total = 0
+
+while i < len(lista):
+    total += lista[i]
+    i += 1
+
+print(total)
+
+
 #7. **Contar elementos en una lista:** Dada una lista `["manzana", "banana", "cereza"]`, cuenta el número de elementos en la lista.
+
+lista = ["manzana", "banana", "cereza"]
+contador = 0
+i = 0
+
+while i < len(lista):
+    i += 1
+    print(i)
+#-------------------------------------------
+for i in range(len(lista)):
+    print(f"{i+1} = {lista[contador]}")
+    contador += 1
+
+print(f"{len(lista)} elementos en la lista:")
+#-------------------------------------------
 
 #8. **Imprimir los primeros n números naturales:** Dado un número `n`, imprime los primeros `n` números naturales.
 
+n = 0
+
+while n < 11:
+    print(n)
+    n +=1
+
 # 9. **Imprimir una lista en orden inverso:** Dada una lista `["a", "b", "c"]`, imprime sus elementos en orden inverso.
 
+lista = ["a","b","c"]
+print(list(reversed(lista)))
+
+
+iterador = len(lista)
+i = -1
+while i >= -iterador:
+    print(lista[i])
+    i -= 1
+
 #10. **Imprimir la tabla de multiplicar del 5:** Usa un bucle `while` para imprimir la tabla de multiplicar del 5.
+iteraciones = 10
+multiplicandor = 5
+i = 0
+while i <= iteraciones:
+    print(multiplicandor * i) 
+    i += 1
+
+
 
 ### Ejercicios Avanzados
 
+
 #11. **Imprimir números impares del 1 al 20:** Usa un bucle `while` para imprimir los números impares del 1 al 20.
+lista = list(range(1,21))
+i = 0
+
+while i < len(lista):
+    i += 1
+    if i % 2 == 0:
+        print(i)
+
 
 #12. **Calcular el factorial de un número:** Dado un número `n`, calcula su factorial usando un bucle `while`.
 
