@@ -1,0 +1,113 @@
+# 30 ejercicios para practicar el bucle `for` en Python sin el código:
+
+### Ejercicios Básicos
+
+#1. **Imprimir números del 1 al 10:** Usa un bucle `for` para imprimir los números del 1 al 10.
+for i in range(1,11):
+    print(i)
+
+#2. **Sumar números del 1 al 10:** Usa un bucle `for` para sumar los números del 1 al 10 y mostrar el resultado.
+suma = 1
+for i in range(2,10):
+    suma += i
+    print(suma)
+
+#3. **Imprimir elementos de una lista:** Dada una lista `["a", "b", "c"]`, imprime cada elemento usando un bucle `for`.
+lista = ["a", "b", "c"]
+for i in lista:
+    print(i)
+
+#4. **Imprimir caracteres de una cadena:** Dada una cadena `"Python"`, imprime cada carácter usando un bucle `for`.
+
+cadena = "python"
+
+for i in cadena:
+    print(i)
+
+
+
+#5. **Imprimir números pares del 2 al 20:** Usa un bucle `for` para imprimir los números pares del 2 al 20.
+
+for i in range(1,22):
+    if i % 2 == 0:
+        print(i)
+
+
+### Ejercicios Intermedios
+
+#6. **Sumar elementos de una lista:** Dada una lista de números `[1, 2, 3, 4, 5]`, suma todos sus elementos y muestra el resultado.
+lista = [1, 2, 3, 4, 5]
+s = 0
+for i in lista:
+    s += i
+    print(s)
+
+#7. **Contar elementos en una lista:** Dada una lista `["manzana", "banana", "cereza"]`, cuenta el número de elementos en la lista.
+
+lista = ["manzana", "banana", "cereza"]
+n = 0
+for i in lista:
+    n += 1
+    print(n)
+print(f"El numero total de esta lista es {n}")
+
+#8. **Imprimir los primeros n números naturales:** Dado un número `n`, imprime los primeros `n` números naturales.
+n = 11
+for i in range(1,n):
+    print(i)
+
+#9. **Imprimir una lista en orden inverso:** Dada una lista `["a", "b", "c"]`, imprime sus elementos en orden inverso.
+
+lista = ["a", "b", "c"]
+for i in range(len(lista)-1,-1,-1):
+    print(lista[i])
+
+#10. **Imprimir la tabla de multiplicar del 5:** Usa un bucle `for` para imprimir la tabla de multiplicar del 5.
+for i in range(1,11):
+    i *= 5
+    print(i)
+
+
+### Ejercicios Avanzados
+
+#11. **Imprimir números impares del 1 al 20:** Usa un bucle `for` para imprimir los números impares del 1 al 20.
+
+#12. **Calcular el factorial de un número:** Dado un número `n`, calcula su factorial usando un bucle `for`.
+
+#13. **Contar vocales en una cadena:** Dada una cadena, cuenta el número de vocales que contiene.
+
+#14. **Encontrar el número máximo en una lista:** Dada una lista de números, encuentra el número máximo.
+
+#15. **Generar una lista de cuadrados:** Dado un número `n`, genera una lista de los primeros `n` cuadrados perfectos.
+
+#16. **Contar palabras en una frase:** Dada una frase, cuenta el número de palabras que contiene.
+
+#17. **Imprimir los primeros n números de Fibonacci:** Dado un número `n`, imprime los primeros `n` números de la secuencia de Fibonacci.
+
+#18. **Eliminar duplicados en una lista:** Dada una lista con elementos duplicados, crea una nueva lista sin duplicados.
+
+#19. **Multiplicar elementos de dos listas:** Dadas dos listas del mismo tamaño, multiplica sus elementos correspondientes y muestra el resultado.
+
+#20. **Sumar las diagonales de una matriz:** Dada una matriz cuadrada, suma los elementos de sus diagonales principal y secundaria.
+
+### Ejercicios de Aplicación
+
+#21. **Contar letras y dígitos en una cadena:** Dada una cadena, cuenta cuántas letras y cuántos dígitos contiene.
+
+#22. **Convertir lista de Celsius a Fahrenheit:** Dada una lista de temperaturas en Celsius, convierte cada una a Fahrenheit.
+
+#23. **Imprimir números primos en un rango:** Dado un rango de números, imprime todos los números primos dentro de ese rango.
+
+#24. **Ordenar una lista:** Dada una lista de números, ordénala en orden ascendente usando un algoritmo de ordenación simple.
+
+#25. **Calcular el promedio de una lista de números:** Dada una lista de números, calcula su promedio.
+
+#26. **Concatenar listas:** Dadas dos listas, concaténalas en una sola lista.
+
+#27. **Encontrar el segundo número más grande en una lista:** Dada una lista de números, encuentra el segundo número más grande.
+
+#28. **Contar apariciones de cada elemento en una lista:** Dada una lista, cuenta cuántas veces aparece cada elemento.
+
+#29. **Generar un patrón de asteriscos:** Usa bucles para generar un patrón de asteriscos, como un triángulo o un cuadrado.
+
+#30. **Verificar si una cadena es un palíndromo:** Dada una cadena, verifica si es un palíndromo (se lee igual de adelante hacia atrás y viceversa).
